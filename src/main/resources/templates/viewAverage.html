@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org" >
+<body>
+<h1>KNIGHT AVERAGE</h1>
+<p>Knight's Average is <b th:text="${average}"></b> </p>
+<!--  <table>
+<tr>
+<th>Trial</th>
+<th>Moves</th>
+
+</tr>
+<tr th:each="move:${kMoves}">
+<td th:text= "${move.tri}"></td>
+<td th:text= "${move.moves}"></td>
+
+</tr>
+</table>
+-->
+<form method = "get" action="viewMove">
+
+<input type="submit" value="View Moves"/>
+
+</form>
+<br>
+
+<form method = "get" action="viewPath">
+<input type="submit" value="View Path"/>
+</form>
+
+<br>
+
+<form method = "get" action="/">
+<input type="submit" value="Play Again"/>
+</form>
+
+</body>
+</html>

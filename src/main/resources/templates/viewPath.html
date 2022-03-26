@@ -1,0 +1,47 @@
+<html xmlns:th="http://www.thymeleaf.org" >
+<body>
+<h1>KNIGHT PATH</h1>
+
+   <!--  <table > 
+   <tr th:each="path:${paths}">
+    <!-- <tr th:each="i: $(path.knightPath)">
+     <td th:each="j: $(i)"> 
+     <td th:text="${path.knightPath}"></td>
+     </tr>
+</table> -->
+<div th:each="path:${paths}">
+Trial: <span th:text="${path.tri}"></span>
+ <table border="1"> 
+   <tr th:each="i : ${#numbers.sequence( 0, 7, 1)}">
+    
+     <td th:each="j : ${#numbers.sequence( 0, 7, 1)}" th:text="${path.knightPath[i][j]}"></td>
+     
+     </tr>
+</table> 
+<br>
+</div>
+<br>
+<form method = "get" action="viewMove">
+
+<input type="submit" value="View Moves"/>
+
+
+</form>
+<br>
+
+<form method = "get" action="viewAverage">
+<input type="submit" value="View Average"/>
+</form>
+
+
+<form method = "get" action="/">
+<input type="submit" value="Play Again"/>
+</form>
+
+
+
+
+
+
+</body>
+</html>

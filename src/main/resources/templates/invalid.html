@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h3>Wrong Input! TRY AGAIN...</h3>
+<form method = "post" action="" th:action="@{/insertKnight}" th:object="${knightbean}">
+<input type="hidden" name="id" th:field="*{knightId}"/>
+Name of your Knight: <input type="text" name="name" th:field="*{knightName}"/><br>
+Number of Trials: <input type="text" name="trial" th:field="*{trial}"/><br>
+Initial Position on X axis (0 to 7): <input type="text" name="X" th:field="*{positionX}"/><br>
+Initial Position on Y axis (0 to 7): <input type="text" name="Y" th:field="*{positionY}"/><br>
+<input type="submit" value="Insert!"/>
+
+
+</form>
+
+
+
+
+</body>
+</html>

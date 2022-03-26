@@ -1,6 +1,7 @@
 # KnightChampion
 Hello Folks!!!!
 - This is a project called Knight Champion.
+- I used Spring Framework to code this.
 - We have all played chess at some point in our life.
 - There is a piece in chess called "Knight".
 - This piece moves in "L" direction on the board.
